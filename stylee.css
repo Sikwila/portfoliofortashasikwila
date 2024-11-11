@@ -465,7 +465,7 @@ a:hover{
 }
 
 .image1c{
-  background: url(./images/Butterfly\ Design\ .jfif) no-repeat 50% 70%;
+  background: url(./images/marirose.png) no-repeat 50% 70%;
   background-position-x: center;
   background-size: cover;   
 }
@@ -489,7 +489,7 @@ a:hover{
 }
 
 .image7{
-  background: url(./images/gen-web-rep2.png) no-repeat 50% 70%;
+  background: url(https://i.ibb.co/bBnhdK7/g-ENESIS-21-1-1.png) no-repeat 50% 70%;
   background-position-x: center;
   background-size: cover;    
 }
@@ -604,5 +604,15 @@ textarea:focus {
 }
 
 #personal .pink{
+  color:#ed008a ;   
+}
+
+
+#personal .pink .pink2{
+  margin-top:-120px;
+  padding-top:320px;
+}
+
+.wow .fadeInUp .pink{
   color:#ed008a ;   
 }

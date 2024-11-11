@@ -66,12 +66,29 @@
             />
           </div>
           <div class="contact-form">
-            <form action="#">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Enter Your Email" required />
-              <input type="tel" placeholder="Your Number" required />
-              <textarea placeholder="Message" rows="4" required></textarea>
-              <button type="submit">Message</button>
+            <form id="contactForm">
+              <input
+                type="text"
+                id="fullName"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <input type="tel" id="phone" placeholder="Your Number" required />
+              <textarea
+                id="message"
+                placeholder="Message"
+                rows="4"
+                required
+              ></textarea>
+              <button type="button" onclick="sendToWhatsApp()">
+                Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -100,32 +117,33 @@
               <div class="col-lg-4" id="personal">
                 <p class="wow fadeInUp pink">connect with me</p>
                 <h4 class="wow fadeInUp" data-wow-delay="0.2s">
-                  ig @natashasikwila
+                  li @natashasikwila
                 </h4>
                 <br /><br />
               </div>
               <div class="col-lg-4" id="media">
                 <p class="wow fadeInUp pink" data-wow-delay="0s">follow me</p>
-                <ul>
-                  <a href="">
+                <ul class="connection">
+                  <a href="https://github.com/Tasha-Coutinho" target="_blank">
                     <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">
-                      fb
+                      GitHub
                     </li>
                   </a>
-                  <a href="">
+                  <a
+                    href="https://www.linkedin.com/in/natasha-sikwila"
+                    target="_blank"
+                  >
                     <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">
-                      ig
+                      LinkedIn
                     </li>
                   </a>
-                  <a href="">
+                  <a href="https://twitter.com/NatashaSikwila" target="_blank">
                     <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">
-                      tw
+                      Twitter
                     </li>
-                  </a>
-                  <a href="">
-                    <li id="yt" class="wow fadeInUp" data-wow-delay="1s">yt</li>
                   </a>
                 </ul>
+
                 <br /><br />
               </div>
               <div class="col-lg-4" id="address">
@@ -150,6 +168,19 @@
         navlinks.classList.toggle("open");
         toggleBtn.classList.toggle("click");
       });
+    </script>
+
+    <script>
+      function sendToWhatsApp() {
+        const fullName = document.getElementById("fullName").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        const whatsappUrl = `https://wa.me/263779480718?text=Hello,+I+am+${fullName}.%0AEmail:+${email}%0APhone:+${phone}%0AMessage:+${message}`;
+
+        window.open(whatsappUrl, "_blank");
+      }
     </script>
   </body>
 </html>

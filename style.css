@@ -626,7 +626,7 @@ a:hover{
 }
 
 .image7{
-      background: url(./images/gen-web-rep2.png) no-repeat 50% 70%;
+      background: url(https://i.ibb.co/xDh8wNZ/g-ENESIS-21-1-1.png) no-repeat 50% 70%;
       background-position-x: center;
       background-size: cover;    
 }
@@ -640,6 +640,7 @@ a:hover{
     }
     
     .video {
+      background-image: url(https://i.pinimg.com/originals/d7/57/3b/d7573b3e236d935c3f87f3d5668a4695.gif);
       position: absolute;
       top: 0;
       left: 0;
