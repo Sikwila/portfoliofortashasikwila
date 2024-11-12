@@ -130,3 +130,10 @@ nav .navlinks li a {
   }
 }
 
+h4 a{
+  color: #fff;
+}
+
+h4 a:hover{
+  color: #bdbbbb;
+}
